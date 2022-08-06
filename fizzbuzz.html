@@ -1,0 +1,32 @@
+<html>
+    <body>
+      <h1>Get a Fizz Buzz Result!</h1>
+      Type a number: <input type="text" id="number">
+      <button onclick="myFunction()">Click here!</button>
+      <hr>
+      <p id="text"></p>
+      <script>
+        function myFunction(){
+          this.innerHTML = "<p>";
+        var number = parseInt(document.getElementById('number').value);
+        document.getElementById('text');
+          if (number == 0) {
+            text.innerHTML += '<p> Invalid input <p>';
+            console.log(number);
+          } else if (number % 3 === 0 && number % 5 == 0) {
+            text.innerHTML += '<p> Fizz Buzz! <p>';
+            console.log(number);
+          } else if (number % 5 == 0) {
+            text.innerHTML += '<p> Buzz! <p>';
+            console.log(number);
+          } else if (number % 3 === 0) {
+            text.innerHTML += '<p> Fizz! <p>';
+            console.log(number);
+          } else {
+            text.innerHTML += '<p>'+number;
+            console.log(number);
+          }
+        }
+    </script>
+    </body>
+</html>
